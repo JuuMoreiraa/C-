@@ -1,4 +1,16 @@
-﻿
+﻿////////////////////////////////////////
+//Entrada
+Console.WriteLine("Calculadora");
+repeat1:
+Console.WriteLine("Qual operação você deseja realizar? \n[1] Soma \n[2] Subtração \n[3] Multiplicação \n[4] Divisão");
+string op = Console.ReadLine();
+Console.Write("Digite o primeiro número: ");
+double n1 = double.Parse(Console.ReadLine());
+Console.Write("Digite o segundo número: ");
+double n2 = double.Parse(Console.ReadLine());
+
+//////////////////////////////////////
+///Processamento
 double Somar(double n1, double n2)
 {
     double sum = n1 + n2;
@@ -22,17 +34,8 @@ double Multiplicar(double n1, double n2)
     double mult = n1 * n2;
     return mult;
 }
-
-Console.WriteLine("Calculadora");
-repeat1:
-Console.WriteLine("Qual operação você deseja realizar? \n[1] Soma \n[2] Subtração \n[3] Multiplicação \n[4] Divisão");
-string op = Console.ReadLine();
-Console.Write("Digite o primeiro número: ");
-double n1 = double.Parse(Console.ReadLine());
-Console.Write("Digite o segundo número: ");
-double n2 = double.Parse(Console.ReadLine());
-
-
+/////////////////////////////////////////
+//Saídas
 switch (op)
 {
     case "1":
